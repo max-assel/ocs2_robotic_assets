@@ -4,45 +4,44 @@
 <!-- =================================================================================== -->
 <!-- This file contains the description of the ANYmal robot. -->
 <robot name="anymal">
-  <link name="base">
+  <link
+    name="base">
+    <inertial>
+      <origin
+        xyz="0.021112 0 -0.005366"
+        rpy="0 0 0" />
+      <mass
+        value="6.921" />
+      <inertia
+        ixx="0.02448"
+        ixy="0.00012166"
+        ixz="0.0014849"
+        iyy="0.098077"
+        iyz="-3.12E-05"
+        izz="0.107" />
+    </inertial>
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://ocs2_robotic_assets/resources/go2/meshes/base.dae" scale="1.0 1.0 1.0"/>
+        <mesh
+          filename="package://ocs2_robotic_assets/resources/go2/dae/base.dae" />
       </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0.016"/>
+      <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <box size="0.894 0.1615 0.256"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="0 1.5707963267948966 0" xyz="0.23529999999999995 0.08075 0"/>
-      <geometry>
-        <cylinder length="0.1482" radius="0.089"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="0 1.5707963267948966 0" xyz="0.23529999999999995 -0.08075 0"/>
-      <geometry>
-        <cylinder length="0.1482" radius="0.089"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="0 1.5707963267948966 0" xyz="-0.23529999999999995 0.08075 0"/>
-      <geometry>
-        <cylinder length="0.1482" radius="0.089"/>
-      </geometry>
-    </collision>
-    <collision>
-      <origin rpy="0 1.5707963267948966 0" xyz="-0.23529999999999995 -0.08075 0"/>
-      <geometry>
-        <cylinder length="0.1482" radius="0.089"/>
+        <box size="0.3762 0.0935 0.114" />
       </geometry>
     </collision>
   </link>
-  <joint name="base_to_base_inertia" type="fixed">
+  <!-- <joint name="base_to_base_inertia" type="fixed">
     <parent link="base"/>
     <child link="base_inertia"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -53,14 +52,14 @@
       <mass value="8.27629"/>
       <inertia ixx="0.06185585085" ixy="0.00052357046" ixz="-0.02204886469" iyy="0.46467853407" iyz="0.00058724812" izz="0.47162119244"/>
     </inertial>
-  </link>
-  <joint name="base_to_body_top" type="fixed">
+  </link> -->
+  <!-- <joint name="base_to_body_top" type="fixed">
     <parent link="base"/>
     <child link="body_top"/>
     <origin rpy="0 0 0" xyz="0 0 0.144"/>
   </joint>
-  <link name="body_top"/>
-  <joint name="base_top_shell" type="fixed">
+  <link name="body_top"/> -->
+  <!-- <joint name="base_top_shell" type="fixed">
     <parent link="base"/>
     <child link="top_shell"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -77,7 +76,7 @@
       <mass value="0.32381"/>
       <inertia ixx="0.00391191516" ixy="-1.078994e-05" ixz="-0.00048832706" iyy="0.01761096758" iyz="4.45768e-06" izz="0.02086102766"/>
     </inertial>
-  </link>
+  </link> -->
   <joint name="base_bottom_shell" type="fixed">
     <parent link="base"/>
     <child link="bottom_shell"/>
