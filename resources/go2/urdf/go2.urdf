@@ -2,8 +2,8 @@
 <!-- =================================================================================== -->
 <!--   Copyright 2023 ANYbotics, https://www.anybotics.com                               -->
 <!-- =================================================================================== -->
-<!-- This file contains the description of the ANYmal robot. -->
-<robot name="anymal">
+<!-- This file contains the description of a Unitree robot. -->
+<robot name="unitree">
   <link
     name="base">
     <visual>
