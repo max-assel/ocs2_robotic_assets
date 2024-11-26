@@ -98,7 +98,7 @@
   <joint name="base_face_front" type="fixed">
     <parent link="base"/>
     <child link="face_front"/>
-    <origin rpy="0 0 -0.0" xyz="0.4087 0 0.0205"/>
+    <origin rpy="0 0.0 -0.0" xyz="0.2 0 0.0205"/> <!-- xyz="0.4087 0 0.0205" -->
   </joint>
   <link name="face_front">
     <inertial>
@@ -179,7 +179,7 @@
     <origin rpy="-1.5707963267948966 0.0 -1.5707963267948966" xyz="-0.00421 0.0 0.0"/>
   </joint>
   <link name="wide_angle_camera_front_camera_parent"/>
-  <joint name="base_face_rear" type="fixed">
+  <!-- <joint name="base_face_rear" type="fixed">
     <parent link="base"/>
     <child link="face_rear"/>
     <origin rpy="0 0 3.141592653589793" xyz="-0.4087 0 0.0205"/>
@@ -190,7 +190,7 @@
       <mass value="0.48634"/>
       <inertia ixx="0.00077413444" ixy="1.55433e-06" ixz="6.243539e-05" iyy="0.00076586537" iyz="4.61106e-06" izz="0.00055588292"/>
     </inertial>
-  </link>
+  </link> -->
   <!-- <joint name="face_rear_to_depth_camera_rear_lower_camera" type="fixed">
     <parent link="face_rear"/>
     <child link="depth_camera_rear_lower_camera"/>
@@ -263,7 +263,7 @@
   </joint>
   <link name="wide_angle_camera_rear_camera_parent"/> -->
 
-  <joint name="base_face_shell_front" type="fixed">
+  <!-- <joint name="base_face_shell_front" type="fixed">
     <parent link="face_front"/>
     <child link="face_shell_front"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -280,8 +280,8 @@
       <mass value="0.1369"/>
       <inertia ixx="0.00102140404" ixy="9.54e-09" ixz="4.343039e-05" iyy="0.00051576362" iyz="2.7592e-07" izz="0.00057208503"/>
     </inertial>
-  </link>
-  <joint name="base_face_shell_rear" type="fixed">
+  </link> -->
+  <!-- <joint name="base_face_shell_rear" type="fixed">
     <parent link="face_rear"/>
     <child link="face_shell_rear"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -298,7 +298,7 @@
       <mass value="0.1369"/>
       <inertia ixx="0.00102140404" ixy="9.54e-09" ixz="4.343039e-05" iyy="0.00051576362" iyz="2.7592e-07" izz="0.00057208503"/>
     </inertial>
-  </link>
+  </link> -->
   <!-- <joint name="base_battery" type="fixed">
     <parent link="base"/>
     <child link="battery"/>
@@ -383,7 +383,7 @@
     <origin rpy="-1.5707963267948966 0.0 -1.5707963267948966" xyz="0.0 0.0 0.0"/>
   </joint>
   <link name="depth_camera_left_depth_optical_frame"/> -->
-  <joint name="base_to_depth_camera_right_camera" type="fixed">
+  <!-- <joint name="base_to_depth_camera_right_camera" type="fixed">
     <parent link="base"/>
     <child link="depth_camera_right_camera"/>
     <origin rpy="0.0 0.7330382858376184 -1.5707963267948966" xyz="0.02500 -0.09230 0.01230"/>
@@ -412,7 +412,7 @@
     <child link="depth_camera_right_depth_optical_frame"/>
     <origin rpy="-1.5707963267948966 0.0 -1.5707963267948966" xyz="0.0 0.0 0.0"/>
   </joint>
-  <link name="depth_camera_right_depth_optical_frame"/>
+  <link name="depth_camera_right_depth_optical_frame"/> -->
   <!-- <joint name="base_to_lidar_parent" type="fixed">
     <parent link="base"/>
     <child link="lidar_parent"/>
