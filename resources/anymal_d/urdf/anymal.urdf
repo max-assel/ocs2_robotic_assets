@@ -418,7 +418,8 @@
     <child link="lidar_parent"/>
     <origin rpy="0 0 1.5707963267948966" xyz="-0.310 0.0 0.1585"/>
   </joint>
-      This accounts for the fact that the Lidar driver rotates the measurements 90 degrees in yaw -->
+  
+  <!-- This accounts for the fact that the Lidar driver rotates the measurements 90 degrees in yaw -->
   <joint name="lidar_parent_to_lidar" type="fixed">
     <parent link="lidar_parent"/>
     <child link="lidar"/>
