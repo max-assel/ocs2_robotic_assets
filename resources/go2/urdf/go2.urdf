@@ -191,7 +191,7 @@
       <inertia ixx="0.00077413444" ixy="1.55433e-06" ixz="6.243539e-05" iyy="0.00076586537" iyz="4.61106e-06" izz="0.00055588292"/>
     </inertial>
   </link>
-  <joint name="face_rear_to_depth_camera_rear_lower_camera" type="fixed">
+  <!-- <joint name="face_rear_to_depth_camera_rear_lower_camera" type="fixed">
     <parent link="face_rear"/>
     <child link="depth_camera_rear_lower_camera"/>
     <origin rpy="0.0 1.0471975511965976 0" xyz="-0.04028 -0.025 -0.08051"/>
@@ -261,7 +261,8 @@
     <child link="wide_angle_camera_rear_camera_parent"/>
     <origin rpy="-1.5707963267948966 0.0 -1.5707963267948966" xyz="-0.00421 0.0 0.0"/>
   </joint>
-  <link name="wide_angle_camera_rear_camera_parent"/>
+  <link name="wide_angle_camera_rear_camera_parent"/> -->
+
   <joint name="base_face_shell_front" type="fixed">
     <parent link="face_front"/>
     <child link="face_shell_front"/>
@@ -352,7 +353,7 @@
     <child link="imu_link"/>
     <origin rpy="3.141592653589793 0.0 3.141592653589793" xyz="-0.25565 0.00255 0.07672"/>
   </joint>
-  <joint name="base_to_depth_camera_left_camera" type="fixed">
+  <!-- <joint name="base_to_depth_camera_left_camera" type="fixed">
     <parent link="base"/>
     <child link="depth_camera_left_camera"/>
     <origin rpy="0.0 0.7330382858376184 1.5707963267948966" xyz="-0.02500 0.09230 0.01230"/>
@@ -381,7 +382,7 @@
     <child link="depth_camera_left_depth_optical_frame"/>
     <origin rpy="-1.5707963267948966 0.0 -1.5707963267948966" xyz="0.0 0.0 0.0"/>
   </joint>
-  <link name="depth_camera_left_depth_optical_frame"/>
+  <link name="depth_camera_left_depth_optical_frame"/> -->
   <joint name="base_to_depth_camera_right_camera" type="fixed">
     <parent link="base"/>
     <child link="depth_camera_right_camera"/>
