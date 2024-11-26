@@ -77,7 +77,7 @@
       <inertia ixx="0.00391191516" ixy="-1.078994e-05" ixz="-0.00048832706" iyy="0.01761096758" iyz="4.45768e-06" izz="0.02086102766"/>
     </inertial>
   </link> -->
-  <joint name="base_bottom_shell" type="fixed">
+  <!-- <joint name="base_bottom_shell" type="fixed">
     <parent link="base"/>
     <child link="bottom_shell"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -94,7 +94,7 @@
       <mass value="0.73783"/>
       <inertia ixx="0.00724251946" ixy="8.94306e-06" ixz="7.96806e-05" iyy="0.03457730959" iyz="4.87e-09" izz="0.04075819312"/>
     </inertial>
-  </link>
+  </link> -->
   <joint name="base_face_front" type="fixed">
     <parent link="base"/>
     <child link="face_front"/>
@@ -298,7 +298,7 @@
       <inertia ixx="0.00102140404" ixy="9.54e-09" ixz="4.343039e-05" iyy="0.00051576362" iyz="2.7592e-07" izz="0.00057208503"/>
     </inertial>
   </link>
-  <joint name="base_battery" type="fixed">
+  <!-- <joint name="base_battery" type="fixed">
     <parent link="base"/>
     <child link="battery"/>
     <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -315,8 +315,8 @@
       <mass value="5.51206"/>
       <inertia ixx="0.00745533705" ixy="-0.00016412238" ixz="7.454512e-05" iyy="0.07199300212" iyz="-1.31605e-06" izz="0.07459357231"/>
     </inertial>
-  </link>
-  <joint name="base_to_docking_socket" type="fixed">
+  </link> -->
+  <!-- <joint name="base_to_docking_socket" type="fixed">
     <parent link="base"/>
     <child link="docking_socket"/>
     <origin rpy="0 0 0" xyz="0.26132 0.0 -0.06205"/>
@@ -333,8 +333,8 @@
       <mass value="0.21905"/>
       <inertia ixx="0.00010664534" ixy="5.383e-08" ixz="4.91832e-06" iyy="0.00015585103" iyz="1.7942e-07" izz="0.00021982177"/>
     </inertial>
-  </link>
-  <joint name="base_hbc_receiver" type="fixed">
+  </link> -->
+  <!-- <joint name="base_hbc_receiver" type="fixed">
     <parent link="base"/>
     <child link="hbc_receiver"/>
     <origin rpy="0 0 0" xyz="-0.04350 0.0 0.14400"/>
@@ -345,7 +345,7 @@
       <mass value="0.60727"/>
       <inertia ixx="0.00172041475" ixy="2.466045e-05" ixz="1.95244e-06" iyy="0.00100683572" iyz="3.598867e-05" izz="0.00217149159"/>
     </inertial>
-  </link>
+  </link> -->
   <link name="imu_link"/>
   <joint name="imu_joint" type="fixed">
     <parent link="base"/>
@@ -412,13 +412,13 @@
     <origin rpy="-1.5707963267948966 0.0 -1.5707963267948966" xyz="0.0 0.0 0.0"/>
   </joint>
   <link name="depth_camera_right_depth_optical_frame"/>
-  <joint name="base_to_lidar_parent" type="fixed">
+  <!-- <joint name="base_to_lidar_parent" type="fixed">
     <parent link="base"/>
     <child link="lidar_parent"/>
     <origin rpy="0 0 1.5707963267948966" xyz="-0.310 0.0 0.1585"/>
-  </joint>
-      This accounts for the fact that the Lidar driver rotates the measurements 90 degrees in yaw -->
-  <joint name="lidar_parent_to_lidar" type="fixed">
+  </joint> -->
+  <!-- This accounts for the fact that the Lidar driver rotates the measurements 90 degrees in yaw -->
+  <!-- <joint name="lidar_parent_to_lidar" type="fixed">
     <parent link="lidar_parent"/>
     <child link="lidar"/>
     <origin rpy="0 0 1.5707963267948966" xyz="0 0 0"/>
@@ -448,7 +448,7 @@
       <mass value="0.9017"/>
       <inertia ixx="0.00111563406" ixy="0.00012074344" ixz="0.00011445184" iyy="0.00114682455" iyz="0.00010431906" izz="0.00132807373"/>
     </inertial>
-  </link>
+  </link> -->
   <joint name="base_LF_HAA_drive" type="fixed">
     <parent link="base"/>
     <child link="LF_HAA_drive"/>
